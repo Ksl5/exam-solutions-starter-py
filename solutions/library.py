@@ -13,7 +13,7 @@ if __name__ == "__main__":
     print("------------------")
     print("PROCESSING LIBRARY DATA...")
     print("------------------")
-    print(books)
+    #print(books)
     # breakpoint()
 
     #
@@ -22,7 +22,9 @@ if __name__ == "__main__":
     # Assuming the identifier, or "id" attribute, of each book is and will always be unique,
     # ... and assuming the order of books may vary,
     # ... "print" the title of the book whose identifier is equal to 4 (i.e. "Book D"):
-
+for book in books:
+    if book["id"] == 4:
+        print(book["title"]) 
 
 
     #
@@ -30,3 +32,5 @@ if __name__ == "__main__":
     #
     # Assuming the "year" attribute represents the year a given book was published,
     # ... "print" the number of books published before the year 1990 (i.e. 4):
+early_books = [book for book in books if book["year"] < 1990]
+print(len(early_books))
