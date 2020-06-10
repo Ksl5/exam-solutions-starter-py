@@ -14,7 +14,7 @@ if __name__ == "__main__":
     print("------------------")
     print("PROCESSING SALES REPORT DATA...")
     print("------------------")
-    print(sales_report)
+    #print(sales_report)
     # breakpoint()
 
     #
@@ -26,3 +26,10 @@ if __name__ == "__main__":
     # ... will determine which month has the greatest number of units sold,
     # ... and "print" a human-friendly message including the name of that month
     # ... and the corresponding number of units sold (i.e. "Top Month: Feb (1000 units)"):
+
+def top_month(all_months):
+    sales = [s["units_sold"] for s in sales_report]
+    message = ("Top Month: " + (max(sales_report))
+    #return message           
+#print(top_month(sales_report))
+#print(message)  

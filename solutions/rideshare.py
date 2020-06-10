@@ -27,7 +27,7 @@ if __name__ == "__main__":
     print("------------------")
     print("PROCESSING RIDESHARE DATA...")
     print("------------------")
-    print(trip)
+    #print(trip)
     # breakpoint()
 
     #
